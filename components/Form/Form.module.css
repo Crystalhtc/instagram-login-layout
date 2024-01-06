@@ -1,0 +1,140 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    border: 1px solid var(--gray);
+    font-family: var(--font);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.userName {
+    font-family: var(--font);
+    font-size: 12px;
+    color: var(--dark-gray);
+    position: absolute;
+    top: 13px;
+    left: 49px;
+    cursor: text;
+}
+
+.password {
+    font-family: var(--font);
+    font-size: 12px;
+    color: var(--dark-gray);
+    position: absolute;
+    top: 58px;
+    left: 49px;
+    cursor: text;
+}
+
+.userNameInput:valid + label
+ {
+    font-size: 10px;
+    top: 3px;
+}
+
+.passwordInput:valid + label
+ {
+    font-size: 10px;
+    top: 48px;
+}
+
+.password, .userName {
+    transition: 0.2s ease-in-out;
+}
+
+.userNameInput {
+    width: 260px;
+    height: 20px;
+    margin-bottom: 7px;
+    border: 1px solid var(--gray);
+    background-color: var(--light-gray);
+    padding: 9px 0px 7px 8px;
+    border-radius: 3px;
+    font-family: var(--font);
+    font-size: 12px;
+}
+
+.userNameInput:focus {
+    outline: 0.5px solid var(--dark-gray);
+}
+
+.passwordInput {
+    width: 260px;
+    height: 20px;
+    border: 1px solid var(--gray);
+    background-color: var(--light-gray);
+    padding: 9px 0px 7px 8px;
+    border-radius: 3px;
+    font-family: var(--font);
+    font-size: 12px;
+}
+
+.passwordInput:focus {
+    outline: 0.5px solid var(--dark-gray);
+}
+
+.logoImage {
+    margin: 23px 0px 13px 0px;
+}
+
+.orContainer {
+    margin: 20px 0px;
+}
+
+.orContainer > * {
+    display: inline-block;            
+    font-size: 13px;
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+.orContainer > hr {
+    width: 108px;
+    border: 0.5px solid var(--gray);
+
+}
+
+.orContainer > p {
+    margin: 0px 18px;
+    position: relative;
+    bottom: 2px;
+}
+
+.facebookLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.forgotPassword {
+    text-decoration: none;
+    width: 350px;
+    height: 16px;
+    color: var(--gray-blue);
+    font-size: 12px;
+    margin: 21px 0px 20px 0;
+}
+
+.forgotPassword:active {
+    opacity: 0.7;
+}
+
+/* mobile size */
+@media (max-width: 450px) {
+    .formContainer {
+        border:none;
+    }
+}
+

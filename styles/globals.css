@@ -1,0 +1,10 @@
+:root {
+  --blue: #0095f6;
+  --gray: #dbdbdb;
+  --light-gray: #fafafa;
+  --dark-blue: #385185;
+  --gray-blue: #00376b;
+  --dark-gray: #737373;
+  --white: #ffffff;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
